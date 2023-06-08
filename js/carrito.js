@@ -40,10 +40,8 @@ function generarFilaCarrito(instrumento) {
   return `<tr class="filaCarrito">
               <td>${instrumento.nombre}</td>
               <td>$${instrumento.precio.toFixed(2)}</td>
-              <td>
-                <button class="btnRemove" onclick="eventoEliminarInstrumento(${
-                  instrumento.id
-                })"> Eliminar </button>
+              <td>    
+                <span class="material-symbols-outlined" onclick="eventoEliminarInstrumento(${instrumento.id})"> delete </span>
               </td>
             </tr>`;
 }

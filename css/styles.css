@@ -6,7 +6,7 @@
 }
 
 header{
-    background-color: #ffe600;
+    background-color: #5e72e4;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -31,16 +31,13 @@ aside{
 }
 
 .up h1{
-    color: #212121;
+    color: #ffffff;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 2px black;
 }
 
 .up .botonCarrito{
     padding: 0.5rem;
-    background-color: #000000;
-    box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.52);
-    -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.52);
-    -moz-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.52);
-    border-radius: 8px;
     color: aliceblue;
 }
 
@@ -61,7 +58,7 @@ button a{
 }
 
 .buscar input{
-    background-color: #828282;
+    background-color: #f6f3ff;
     border: none;
     border-radius: 8px;
     padding: 5px;
@@ -76,7 +73,7 @@ button a{
 }
 
 .generalContainer{
-    background-color: #828282;
+    background-color: #f6f3ff;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -85,7 +82,7 @@ button a{
 
 .carritoContainer{
   height: 500px;
-  background-color: #828282;
+  background-color: #f6f3ff;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -93,7 +90,7 @@ button a{
 }
 
 .productCard {
-  background-color: #757575;
+  background-color: #ffffff;
   border: none;
   border-radius: 15px;
   box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.37);
@@ -216,4 +213,20 @@ tfoot{
 .vaciar{
   align-items: center;
   margin: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: rgb(0, 0, 0)
+}
+
+.total{
+  font-size: large;
+  font-weight: 700;
 }
