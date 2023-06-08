@@ -5,7 +5,7 @@ const instrumentos = [];
 const URL = "../js/instrumentos.json";
 
 traerInstrumentos();
-inyectarInstrumentos(instrumentos);
+inyectarInstrumentos();
 
 async function traerInstrumentos() {
   try {
@@ -47,9 +47,9 @@ function generarProductCardsHTML(instrumento) {
           </div>`;
 }
 
-function inyectarInstrumentos(stock) {
+function inyectarInstrumentos() {
   container.innerHTML = "";
-  stock.forEach((instrumento) => {
+  instrumentos.forEach((instrumento) => {
     container.innerHTML += generarProductCardsHTML(instrumento);
   });
   eventoAddCarrito();
